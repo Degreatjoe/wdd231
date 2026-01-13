@@ -5,46 +5,73 @@
     <meta name="author" content="Great Joseph">
     <meta name="description" content="wdd231 Home Page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <title>Home Page | wdd231</title>
+    <link rel="stylesheet" href="styles/coc.css">
+    <script src="scripts/util.js" defer></script>
+    <script src="scripts/courrse.js" defer></script>
+    <link rel="stylesheet" href="styles/course.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="">
-        <span> Great Joseph</span>
-        <!-- hamburger menu buttond -->
-        <button></button>
+    <header class="site-header">
+        <div class="header-content">
+            <img src="images/logop.jpg" alt="Site logo" class="logo" width="45px" height="auto">
+            <span class="site-name">Great Joseph</span>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle navigation">
+            <img src="images/menu.png" alt="" class="menu-icon">
+        </button>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
+    <nav id="navMenu">
+        <a href="index.html" class="active">Home</a>
         <a href="#">Chamber</a>
         <a href="#">Final</a>
     </nav>
 
     <main>
         <h1>Home</h1>
-        <section>
+        <section class="about">
             <h2>About me</h2>
             <p>My name is Great Onyemaechi (Jnr) Joseph. I was born and raised in Nigeria and currently live in Edo State. I am studying Web Development and enjoy learning new technologies that can help improve lives and create better online experiences.</p>
             <p>In my free time, I enjoy exploring new ideas, listening to music, and connecting with people who share my passion for technology and creativity. I believe in lifelong learning and love turning ideas into real projects that make a difference</p>
         </section>
-        <section>
+
+        <section class="photo">
             <h2> Student Photo </h2>
+            <img src="images/pimage.svg" alt="phhoto of Great Joseph">
         </section>
-        <section>
+
+        <section id="courses">
             <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+                <button data-filter="all">All Courses</button>
+                <button data-filter="WDD">WDD Courses</button>
+                <button data-filter="CSE">CSE Courses</button>
+            </div>
+
+            <p class="credit-total">
+                Total Credits: <span id="totalCredits">0</span>
+            </p>
+
+            <div id="courseContainer"></div>
         </section>
+
     </main>
 
     <footer>
         <div class="socials">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">Github</a>
+            <a href="linkedin.com/in/great-joseph" target="_blank"><img src="images/linkedin.svg" alt="linkedin logo" width=" 48px" height="auto"></a>
+            <a href="github.com/degreatjoe" target="_blank"><img src="images/github-brands-solid-full.svg" alt="github logo" width="48px" height="auto"></a>
+            <a href="x.com/degreatjoe" target="_blank"><img src="images/x-twitter-brands-solid-full.svg" alt="x - teitter logo" width="48px" height="auto"></a>
         </div>
         <p> &copy; <span id="currentYear"></span> Great Joseph | Benin City, Nigeria</p>
-        <p id="lastModified"></p>
+        <p>last modified at: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
