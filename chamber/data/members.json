@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Edo Tech Solutions",
+        "address": "12 Airport Road, Benin City, Edo State",
+        "phone": "+234 803 111 2233",
+        "website": "https://edotechsolutions.com",
+        "image": "../images/edotech.webp",
+        "membershipLevel": 3,
+        "description": "Providing innovative software and IT solutions."
+    },
+    {
+        "name": "Royal Farms Ltd",
+        "address": "45 Ugbowo Road, Benin City",
+        "phone": "+234 806 456 7890",
+        "website": "https://royalfarms.ng",
+        "image": "../images/business2.webp",
+        "membershipLevel": 2,
+        "description": "Organic food production and distribution."
+    },
+    {
+        "name": "Benin Construction Co.",
+        "address": "18 Sapele Road, Benin City",
+        "phone": "+234 809 234 5566",
+        "website": "https://beninconstruction.com",
+        "image": "business3.webp",
+        "membershipLevel": 3,
+        "description": "Residential and commercial construction services."
+    },
+    {
+        "name": "Heritage Fashion House",
+        "address": "7 Mission Road, Benin City",
+        "phone": "+234 812 998 7766",
+        "website": "https://heritagefashion.ng",
+        "image": "business4.webp",
+        "membershipLevel": 1,
+        "description": "Custom African fashion and tailoring."
+    },
+    {
+        "name": "Cityline Logistics",
+        "address": "22 Akpakpava Street, Benin City",
+        "phone": "+234 705 667 8899",
+        "website": "https://citylinelogistics.ng",
+        "image": "business5.webp",
+        "membershipLevel": 2,
+        "description": "Reliable logistics and delivery services."
+    },
+    {
+        "name": "Prime Health Clinic",
+        "address": "9 Dawson Road, Benin City",
+        "phone": "+234 814 332 1100",
+        "website": "https://primehealth.ng",
+        "image": "business6.webp",
+        "membershipLevel": 3,
+        "description": "Quality healthcare for individuals and families."
+    },
+    {
+        "name": "Unity Printing Press",
+        "address": "30 Upper Sakponba Road, Benin City",
+        "phone": "+234 807 445 9900",
+        "website": "https://unityprint.ng",
+        "image": "business7.webp",
+        "membershipLevel": 1,
+        "description": "Commercial printing and branding solutions."
+    }
+]

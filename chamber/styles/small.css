@@ -1,0 +1,206 @@
+/* =====================
+   HEADER
+===================== */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* =====================
+   LOGO
+===================== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--light-bg-color);
+}
+
+.site-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* =====================
+   HEADER ACTIONS
+===================== */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+/* =====================
+   NAVIGATION (MOBILE)
+===================== */
+.nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--light-bg-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav a:hover,
+.nav a.active {
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0.236);
+}
+
+/* Show nav when toggled */
+.nav.open {
+    display: flex;
+}
+
+/* =====================
+   MAIN LAYOUT
+===================== */
+main {
+    padding: 1rem 1.75rem;
+}
+
+/* =====================
+   VIEW TOGGLE
+===================== */
+.dir-view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.dir-view-toggle button {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+.dir-view-toggle button img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+/* Active state */
+.dir-view-toggle button.active {
+    background-color: var(--secondary-color);
+}
+
+/* =====================
+   MEMBERS (DEFAULT: GRID)
+===================== */
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+/* =====================
+   LIST VIEW
+===================== */
+.members.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    background-color: var(--light-bg-color);
+    border-radius: 4px;
+    padding: 0.75rem 0.5rem;
+    border: 1px solid var(--secondary-color);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 0.5rem;
+    /* border-radius: 4px; */
+}
+
+.member-card h3 {
+    margin: 0 0;
+    font-size: 1rem;
+}
+
+.member-card p {
+    margin: 0.15rem 0;
+    font-size: 0.9rem;
+}
+
+.members.list .member-card {
+    display: block;
+}
+
+.members.list img {
+    display: none;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--dark-bg-color);
+    color: var(--light-bg-color);
+}
+
+.contact h3 {
+    color: var(--secondary-color);
+    font-weight: 900;
+}
+
+.footer-note {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #333;
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+
+/* =====================
+   ICON / BUTTON UTILITY
+===================== */
+.social-media img {
+    width: 50px;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}

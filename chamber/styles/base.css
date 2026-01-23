@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #010151;
+    --secondary-color: #22c55e;
+    --dark-bg-color: #111111;
+    --light-bg-color: #ffffff;
+    --text-color: #333333;
+    --font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* RESET & BASE TYPOGRAPHY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    font-weight: 400;
+}

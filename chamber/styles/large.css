@@ -1,0 +1,62 @@
+@media (min-width: 728px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        gap: 1rem;
+        border: none;
+        width: auto;
+    }
+
+    .nav a {
+        border: none;
+    }
+    .members {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .members.list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    /* GRID VIEW */
+    .members {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* LIST VIEW */
+    .members.list .member-card {
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr 2fr;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background-color: var(--light-bg-color);
+        border-radius: 4px;
+    }
+
+    .members.list .member-card:nth-child(even) {
+        background-color: #bfe9f7;
+    }
+
+    .members.list img {
+        display: none;
+    }
+
+    .members.list h3,
+    .members.list p,
+    .members.list a {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
