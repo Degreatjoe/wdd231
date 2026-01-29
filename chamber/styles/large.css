@@ -53,10 +53,20 @@
         margin: 0;
         font-size: 0.95rem;
     }
+    .hero {
+        max-width: 100%;
+    }
 
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .weather {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .spotlight {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

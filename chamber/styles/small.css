@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 1rem;
+    padding: 1rem;
     background-color: var(--primary-color);
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -80,7 +80,8 @@
    MAIN LAYOUT
 ===================== */
 main {
-    padding: 1rem 1.75rem;
+    padding: 0 1rem;
+    max-width: 100%;
 }
 
 /* =====================
@@ -167,6 +168,106 @@ main {
 }
 
 
+/* ======================
+    INDEX PAGE SPECIFIC
+====================== */
+.hero {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+main h1 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0 1rem;
+}
+
+section div {
+    background-color: #dfdddd;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+}
+
+.weather {
+    border-radius: 4px solid #ccc;
+    display: grid;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.weather-row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.weather-row img{
+    width: 48px;
+    height: 48px;
+}
+
+.forcast p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.spotlight {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    
+}
+.business-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+
+}
+.business-info {
+    display: flex;
+
+}
+
+.spotlight img {
+    width: 80px;
+    border-radius: 4px;
+}
+
+.spotlight h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.spotlight p {
+    margin: 0.2rem 0;
+    font-size: 0.85rem;
+}
+
+
 /* =====================
    FOOTER
 ===================== */
@@ -175,7 +276,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     background-color: var(--dark-bg-color);
     color: var(--light-bg-color);
 }

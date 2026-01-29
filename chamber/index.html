@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Great Joseph">
-    <meta name="description" content="Chamber Directory | Great Joseph, Chamber directory page for wdd231">
+    <meta name="description" content="Chamber Home | Great Joseph, Chamber Home page for wdd231">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Chamber Directory">
-    <meta property="og:description" content="Benin City Chamber of Commerce Directory. Find and connect with local businesses and services. | Great Joseph | wdd231">
+    <meta property="og:description" content="Benin City Chamber of Commerce Home. Find and connect with local businesses and services. | Great Joseph | wdd231">
     <meta property="og:image" content="images/logo.svg">
     <meta property="og:url" content="http://Degreatjoe.github.io/wdd231/chamber/directory.html">
-    <title> Chamber Directory | wdd231 </title>
+    <title> Chamber Home | wdd231 </title>
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="/favicon.ico">
-    <script src="scripts/members.js" defer></script>
     <script src="scripts/util.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -31,8 +31,8 @@
         </a>
 
         <nav id="navMenu" class="nav">
-            <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
         </nav>
@@ -42,20 +42,50 @@
                 <img src="images/dark-theme-svgrepo-com.svg" alt="" width="32">
             </button>
 
-            <button class="menu-icon" aria-label="Open menu">
+            <button class="menu-icon" aria-label="Open menu" aria-expanded="false">
                 <img src="images/menu.png" alt="" width="32">
             </button>
         </div>
 
     </header>
 
-    <main class="directory-main">
-        <h1> Directory</h1>
-        <div class="dir-view-toggle">
-            <button class="active" id="grid-view"><img src="images/grid-svgrepo-com.svg" alt="grid view" width="48px"></button>
-            <button id="list-view"><img src="images/list-ul-svgrepo-com.svg" alt="list view" width="48px"></button>
-        </div>
-        <div class="members"></div>
+    <main>
+        <section class="hero">
+            <img
+                src="images/hero-600.webp"
+                srcset="
+                images/hero-400.webp 400w,
+                images/hero-600.webp 600w,
+                images/hero-1024.webp 1024w
+                "
+                sizes="100vw"
+                alt="Benin City business district"
+            >
+        </section>
+
+        <h1>Home</h1>
+
+        <!-- <section class="event">
+            <h2>Events</h2>
+        </section> -->
+
+        <section class="weather">
+            <div class="event">
+                <h2>Events</h2>
+            </div>
+            <div class="current">
+                <h2>Current Weather</h2>
+                <div id="current-weather"></div>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+            </div>
+
+        </section>
+
+        <section class="spotlight">
+            <h2>Business Spotlights</h2>
+        </section>
     </main>
 
     <footer>
