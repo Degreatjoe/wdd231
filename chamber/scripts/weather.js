@@ -116,6 +116,8 @@ function displaySpotlights(members) {
                     <p><strong>EMAIL:</strong> ${member.email}</p>
                     <p><strong>PHONE:</strong> ${member.phone}</p>
                     <p><strong>URL:</strong> ${member.website}</p>
+                    <p><strong>MEMBERSHIP:</strong> ${member.membershipLevel === 3 ? 'Gold' : 'Silver'}</p>
+                    <p><strong>ADDRESS:</strong> ${member.address}</p>
                 </div>
             </div>
         `;

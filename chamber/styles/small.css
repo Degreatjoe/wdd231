@@ -253,7 +253,8 @@ section h2 {
 }
 
 .spotlight img {
-    width: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 4px;
 }
 
