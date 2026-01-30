@@ -195,7 +195,7 @@ main {
     flex-direction: column;
     justify-content: center;
 }
-.hero-text h1 {
+.hero-text h3 {
     font-size: 1.8rem;
     margin: 0 1rem 0.5rem 1rem;
 }
