@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Great Joseph">
-    <meta name="description" content="Chamber Home | Great Joseph, Chamber Home page for wdd231">
+    <meta name="description" content="Chamber Thank You | Great Joseph, Chamber Thank You page for wdd231">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Chamber Directory">
-    <meta property="og:description" content="Benin City Chamber of Commerce Home. Find and connect with local businesses and services. | Great Joseph | wdd231">
+    <meta property="og:title" content="Chamber Thank You">
+    <meta property="og:description" content="Benin City Chamber of Commerce Thank You. Find and connect with local businesses and services. | Great Joseph | wdd231">
     <meta property="og:image" content="http://Degreatjoe.github.io/wdd231/chamer/images/logo.svg">
     <meta property="og:url" content="http://Degreatjoe.github.io/wdd231/chamber/index.html">
-    <title> Chamber Home | wdd231 </title>
+    <title> Chamber Thank You | wdd231 </title>
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -31,7 +31,7 @@
         </a>
 
         <nav id="navMenu" class="nav">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="#">Discover</a>
@@ -49,74 +49,19 @@
 
     </header>
 
-    <main>
-        <section class="hero">
-            <img
-                src="images/hero-600.webp"
-                srcset="
-                images/hero-400.webp 400w,
-                images/hero-600.webp 600w,
-                images/hero-1024.webp 1024w
-                "
-                sizes="100vw"
-                alt="Benin City business district"
-            >
-            <div class="hero-text">
-                <h3>Where Benin City Businesses Grow Stronger Together</h3>
-                <p>Connecting entrepreneurs, influencing policy, and creating real opportunities.</p>
-                <a href="#" class="cta-btn">Join Benin City’s Business Network</a>
-            </div>
+    <main class="thank-you-message">
+        <h1>Thank You for Your Application!</h1>
+        <p>We appreciate your interest in joining our organization.</p>
 
+        <section class="summary">
+            <h2>Your Submitted Information</h2>
+            <p><strong>Name:</strong> <span id="name"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Mobile:</strong> <span id="phone"></span></p>
+            <p><strong>Business:</strong> <span id="business"></span></p>
+            <p><strong>Submitted On:</strong> <span id="timestamp"></span></p>
         </section>
 
-        <h1>Home</h1>
-
-        <!-- <section class="event">
-            <h2>Events</h2>
-        </section> -->
-
-        <section class="weather">
-            <div class="event">
-                <h2>Events</h2>
-
-                <div class="event-item">
-                    <h3>Business Networking Breakfast</h3>
-                    <p class="event-date">March 15, 2026</p>
-                    <p class="event-desc">
-                        Connect with local business leaders and entrepreneurs over breakfast.
-                    </p>
-                </div>
-
-                <div class="event-item">
-                    <h3>SME Growth & Innovation Workshop</h3>
-                    <p class="event-date">April 10, 2026</p>
-                    <p class="event-desc">
-                        Learn practical strategies to scale your business in today’s economy.
-                    </p>
-                </div>
-
-                <div class="event-item">
-                    <h3>Benin City Trade & Investment Forum</h3>
-                    <p class="event-date">May 22, 2026</p>
-                    <p class="event-desc">
-                        Exploring investment opportunities and partnerships across key sectors.
-                    </p>
-                </div>
-            </div>
-
-            <div class="current">
-                <h2>Current Weather</h2>
-                <div id="current-weather"></div>
-            </div>
-            <div class="forecast">
-                <h2>Weather Forecast</h2>
-            </div>
-
-        </section>
-
-        <section class="spotlight">
-            <h2>Business Spotlights</h2>
-        </section>
     </main>
 
     <footer>
