@@ -424,13 +424,84 @@ input[type="submit"] {
 
 /* ---------- Modals ---------- */
 dialog {
-  max-width: 500px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.3s ease-out;
   padding: 1.5rem;
 }
 
-dialog::backdrop {
-  background: rgba(0,0,0,0.5);
+/* subtle entrance animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+dialog h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+dialog ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+dialog li {
+  margin-bottom: 0.4rem;
+}
+
+/* Modal buttons */
+dialog button {
+  align-self: flex-end;
+  background-color: var(--secondary-color);
+  color: var(--dark-bg-color);
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+dialog button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-bg-color);
+  transform: translateY(-1px);
+}
+
+dialog button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Membership card buttons */
+.memberships .card button {
+  margin-top: 0.75rem;
+  align-self: flex-start;
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.memberships .card button:hover {
+  background-color: var(--primary-color);
+  color: var(--light-bg-color);
+}
+
+
 
 /* =====================
     Thank You Page

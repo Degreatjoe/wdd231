@@ -101,9 +101,9 @@
 
     /* ---------- Modals ---------- */
     dialog {
-        margin-left: 80vw;
-        max-width:30vw;
-        padding: 1.5rem;
+        margin-left: auto;
+        margin-right: 2rem;
+        max-width: 30vw;
     }
 
     dialog::backdrop {

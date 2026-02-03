@@ -21,12 +21,25 @@ document.getElementById("timestamp").value = new Date().toISOString();
 
 
 
-const params = new URLSearchParams(window.location.search);
+const modalTriggers = document.querySelectorAll("[data-modal]");
+const closeButtons = document.querySelectorAll(".close-modal");
 
-document.getElementById("name").textContent =
-  `${params.get("fname")} ${params.get("lname")}`;
+modalTriggers.forEach(trigger => {
+  trigger.addEventListener("click", () => {
+    const dialog = document.getElementById(trigger.dataset.modal);
+    if (dialog) dialog.showModal();
+  });
+});
 
-document.getElementById("email").textContent = params.get("email");
-document.getElementById("phone").textContent = params.get("phone");
-document.getElementById("business").textContent = params.get("business");
-document.getElementById("timestamp").textContent = params.get("timestamp");
+closeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    button.closest("dialog")?.close();
+  });
+});
+
+document.querySelectorAll("dialog").forEach(dialog => {
+  dialog.addEventListener("click", e => {
+    if (e.target === dialog) dialog.close();
+  });
+});
+

@@ -124,34 +124,35 @@
         </form>
 
         <!-- ================= MEMBERSHIP CARDS ================= -->
-         <section class="memberships" aria-label="Membership Levels">
+        <section class="memberships" aria-label="Membership Levels">
 
             <div class="card">
                 <h2>NP Membership</h2>
                 <p>No cost for non-profits.</p>
-                <a href="#" onclick="document.getElementById('npModal').showModal()">View Benefits</a>
+                <button type="button" data-modal="npModal">View Benefits</button>
             </div>
 
             <div class="card">
                 <h2>Bronze</h2>
                 <p>Affordable entry-level benefits.</p>
-                <a href="#" onclick="document.getElementById('bronzeModal').showModal()">View Benefits</a>
+                <button type="button" data-modal="bronzeModal">View Benefits</button>
             </div>
 
             <div class="card">
                 <h2>Silver</h2>
                 <p>Enhanced visibility and training.</p>
-                <a href="#" onclick="document.getElementById('silverModal').showModal()">View Benefits</a>
+                <button type="button" data-modal="silverModal">View Benefits</button>
             </div>
 
             <div class="card">
                 <h2>Gold</h2>
                 <p>Premium exposure and discounts.</p>
-                <a href="#" onclick="document.getElementById('goldModal').showModal()">View Benefits</a>
+                <button type="button" data-modal="goldModal">View Benefits</button>
             </div>
-        </section>
 
+        </section>
     </main>
+
     <!-- ================= MODALS ================= -->
     <dialog id="npModal">
         <h3>NP Membership Benefits</h3>
@@ -159,7 +160,7 @@
             <li>Networking events</li>
             <li>Community listings</li>
         </ul>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="bronzeModal">
@@ -168,7 +169,7 @@
             <li>Event discounts</li>
             <li>Basic advertising</li>
         </ul>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="silverModal">
@@ -177,7 +178,7 @@
             <li>Training sessions</li>
             <li>Homepage spotlight rotation</li>
         </ul>
-        <button onclick="this.closest('dialog').close()">Close</button>
+        <button class="close-modal">Close</button>
     </dialog>
 
     <dialog id="goldModal">
@@ -187,9 +188,8 @@
             <li>Special event access</li>
             <li>Maximum discounts</li>
         </ul>
-        <button onclick="this.closest('dialog').close()">Close</button>
-    </dialog>
-
+        <button class="close-modal">Close</button>
+    </dialog>   
 
     <footer>
         <div class="contact">
