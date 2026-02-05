@@ -7,3 +7,6 @@ document.getElementById("email").textContent = params.get("email");
 document.getElementById("phone").textContent = params.get("phone");
 document.getElementById("business").textContent = params.get("business");
 document.getElementById("timestamp").textContent = params.get("timestamp");
+
+
+document.getElementById("timestamp").value = new Date().toISOString();

@@ -17,7 +17,6 @@ let yearSpan = document.getElementById("year");
 let currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
 
-document.getElementById("timestamp").value = new Date().toISOString();
 
 
 

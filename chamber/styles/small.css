@@ -526,3 +526,63 @@ dialog button:focus {
   margin: 0.5rem 0;
 }
 
+
+
+/* ==================
+    discover page
+===================== */
+.discover-main {
+    margin: 0 1rem;
+    max-width: 100%;
+}
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+        "place_card1"
+        "place_card2"
+        "place_card3"
+        "place_card4"
+        "place_card5"
+        "place_card6"
+        "place_card7"
+        "place_card8";
+    align-items: center;
+    justify-content: center;
+}
+.place_card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.place_card .learn{
+    width: 100%;
+    margin-top: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--light-bg-color);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.place_card img {
+    max-width: 250px;
+}
+
+#visit-message {
+    max-width: 100%;
+    transition: opacity 1s ease;
+}
+#visit-message p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--dark-bg-color);
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
+    border-radius: 6px;
+    position: fixed;
+    width: 100vw;
+}
