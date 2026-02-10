@@ -34,6 +34,19 @@ header h1 {
     color: #f2b705;
     margin: 0;
 }
+header a {
+    text-decoration: none;
+    background-color: #f2b705;
+    color: #003366;
+    padding: 1rem;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 50%;
+}
+header a:hover {
+    padding: 1rem;
+    font-size: x-large;
+}
 
 main {
     max-width: 1000px;
