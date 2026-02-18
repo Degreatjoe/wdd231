@@ -39,7 +39,24 @@
     }
     .member-card {
         margin: 8px;
-        
+
     }
+
+    #visit-message {
+        transition: opacity 1s ease;
+    }
+    #visit-message p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--dark-bg-color);
+        text-align: center;
+        background-color: var(--secondary-color);
+        padding: 0.75rem;
+        border-radius: 6px;
+        position: fixed;
+        float: right;
+    }
+
+
 
 }
