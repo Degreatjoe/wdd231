@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Osaze Williams",
+    "year": "Class of 2012",
+    "role": "Robotics Engineer",
+    "bio": "Osaze led the school to the state finals in science competitions.",
+    "image": "images/members/osaze.webp",
+    "clubs": ["JETS", "Maths"]
+  },
+  {
+    "name": "Efeosa Agbonlahor",
+    "year": "Class of 2015",
+    "role": "Legal Consultant",
+    "bio": "A passionate advocate for student rights and public speaking.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/efeosa.webp"
+  },
+  {
+    "name": "Blessing Okoro",
+    "year": "Class of 2018",
+    "role": "Medical Student",
+    "bio": "Currently studying at UNIBEN; was top of her class in Biology.",
+    "clubs": ["JETS", "Maths"],
+    "image": "images/members/blessing.webp"
+  },
+  {
+    "name": "Victor Udoh",
+    "year": "Class of 2010",
+    "role": "Chartered Accountant",
+    "bio": "Victor manages finances for top firms in Benin City.",
+    "clubs": ["Maths"],
+    "image": "images/members/victor.webp"
+  },
+  {
+    "name": "Patience Idemudia",
+    "year": "Class of 2014",
+    "role": "Journalist",
+    "bio": "Former editor of the school newsletter.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/patience.webp"
+  },
+  {
+    "name": "Samuel Enoghase",
+    "year": "Class of 2016",
+    "role": "Graphic Designer",
+    "bio": "Creative mind behind the school's anniversary logo.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/samuel.webp"
+  },
+  {
+    "name": "Joy Igbinedion",
+    "year": "Class of 2020",
+    "role": "University Undergraduate",
+    "bio": "Pursuing a degree in Economics; loves community service.",
+    "clubs": ["Maths"],
+    "image": "images/members/joy.webp"
+  },
+  {
+    "name": "Ivie Omorogbe",
+    "year": "Class of 2011",
+    "role": "Public Speaker",
+    "bio": "Renowned for her debate skills in the LDDQS club.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/ivie.webp"
+  },
+  {
+    "name": "Kelvin Osawe",
+    "year": "Class of 2013",
+    "role": "Civil Engineer",
+    "bio": "Helping build modern infrastructure in Edo State.",
+    "clubs": ["JETS"],
+    "image": "images/members/kelvin.webp"
+  },
+  {
+    "name": "Anita Efosa",
+    "year": "Class of 2017",
+    "role": "Fashion Entrepreneur",
+    "bio": "Bringing Benin cultural designs to the global stage.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/anita.webp"
+  },
+  {
+    "name": "Musa Ibrahim",
+    "year": "Class of 2009",
+    "role": "Bank Manager",
+    "bio": "Expert in risk management and retail banking.",
+    "clubs": ["Maths"],
+    "image": "images/members/musa.webp"
+  },
+  {
+    "name": "Osasumwen Idehen",
+    "year": "Class of 2015",
+    "role": "Pharmacist",
+    "bio": "Dedicated to healthcare access in rural communities.",
+    "clubs": ["JETS"],
+    "image": "images/members/osas.webp"
+  },
+  {
+    "name": "Nosa Igbinosa",
+    "year": "Class of 2012",
+    "role": "Data Scientist",
+    "bio": "Passionate about machine learning and local data trends.",
+    "clubs": ["Maths", "JETS"],
+    "image": "images/members/nosa.webp"
+  },
+  {
+    "name": "Sarah Isoken",
+    "year": "Class of 2019",
+    "role": "Law Student",
+    "bio": "Top debater during her senior secondary years.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/sarah.webp"
+  },
+  {
+    "name": "Tunde Bakare",
+    "year": "Class of 2008",
+    "role": "Architect",
+    "clubs": ["JETS"],
+    "image": "images/members/tunde.webp"
+  },
+  {
+    "name": "Faith Eghosa",
+    "year": "Class of 2021",
+    "role": "STEM Advocate",
+    "bio": "Volunteers to teach code to young girls in Benin.",
+    "clubs": ["JETS", "Maths"],
+    "image": "images/members/faith.webp"
+  },
+  {
+    "name": "Eloghosa Ojo",
+    "year": "Class of 2014",
+    "role": "Content Creator",
+    "bio": "Digital storyteller highlighting Edo heritage.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/eloghosa.webp"
+  },
+  {
+    "name": "Precious Imasuen",
+    "year": "Class of 2013",
+    "role": "Agriculturist",
+    "bio": "Managing large-scale poultry and crop farms.",
+    "clubs": ["JETS"],
+    "image": "images/members/precious.webp"
+  },
+  {
+    "name": "Destiny Osarobo",
+    "year": "Class of 2010",
+    "role": "Web Developer",
+    "bio": "Full-stack developer with a love for clean code.",
+    "clubs": ["Maths", "JETS"],
+    "image": "images/members/destiny.webp"
+  },
+  {
+    "name": "Obehi Aigbe",
+    "year": "Class of 2016",
+    "role": "Human Resources",
+    "bio": "Focused on talent acquisition and corporate culture.",
+    "clubs": ["LDDQS"],
+    "image": "images/members/obehi.webp"
+  }
+]
+

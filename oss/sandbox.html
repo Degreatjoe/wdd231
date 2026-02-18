@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/sandbox.css">
+    <script src="scripts/sandbox.js" type="module" defer></script>
+</head>
+<body>
+
+    <p>please rate us!</p>
+    <div id="rating" class="rating"> 
+        <!-- content loaded with js -->
+    </div>
+    <div style="display: inline-flex;">
+      <!-- <span id="like"></span>
+      <span id="comment"></span>
+      <span id="reply"></span> -->
+    </div>
+
+    <div>
+      <p>Oka Secondary School is a prestigious educational institution located in the heart of the city. With a rich history spanning over 50 years, Oka Secondary School has been dedicated to providing quality education and fostering a supportive learning environment for students from diverse backgrounds. The school offers a wide range of academic programs, extracurricular activities, and community engagement opportunities, making it a hub for intellectual growth and personal development. Oka Secondary School is committed to nurturing the talents and aspirations of its students, preparing them for success in higher education and future careers.</p>  
+    </div>
+
+    <div class="post">
+      <div class="user-info">
+        <img src="images/forum/user.png" alt="user profile picture" width="24" height="24">
+        <h6>David_ClassOf08</h6>
+      </div>
+      <div class="post-content">
+        <p>Just donated $100 to the school! Let's keep supporting our alma mater!</p>
+      </div>
+      <div class="post-interactions">
+          <span id="like"></span>
+          <span id="comment"></span>
+          <span id="reply"></span>
+      </div>
+    </div>
+    <div class="carousel">
+      <button class="nav left">&#10094;</button>
+
+      <div class="carousel-track">
+        <div class="slide">
+          <img src="images/index/jetsclub.webp" alt="jetsclub">
+          <h3>
+            Jets Club
+          </h3>
+        </div>
+        <div class="slide">
+          <img src="images/index/lddqsclub.webp" alt="lddqsclub">
+          <h3>
+            LDDQS Club
+        </div>
+        <div class="slide">
+          <img src="images/index/mathsclub.webp" alt="">
+          <h3>
+            Maths Club
+          </h3>
+        </div>
+      </div>
+
+      <button class="nav right">&#10095;</button>
+    </div>
+
+
+    <dialog id="comment-dialog">
+        <div class="modal-header">
+            <h3>Post Comments</h3>
+            <button id="close-dialog" style="cursor:pointer;">&times;</button>
+        </div>
+        <div id="modal-body">
+            </div>
+    </dialog>
+    
+<!-- <style>
+.rating {
+  direction: rtl;
+  display: inline-flex;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating input:checked ~ label {
+  color: gold;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: gold;
+}
+</style>
+
+<div class="rating">
+  <input type="radio" name="rating" id="star5" value="5">
+  <label for="star5">★</label>
+
+  <input type="radio" name="rating" id="star4" value="4">
+  <label for="star4">★</label>
+
+  <input type="radio" name="rating" id="star3" value="3">
+  <label for="star3">★</label>
+
+  <input type="radio" name="rating" id="star2" value="2">
+  <label for="star2">★</label>
+
+  <input type="radio" name="rating" id="star1" value="1">
+  <label for="star1">★</label>
+</div> -->
+</body>
+</html>

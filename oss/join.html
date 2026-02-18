@@ -22,9 +22,9 @@
   <link rel="icon" href="favicon.ico">
 
   <script src="scripts/util.js" defer></script>
-  <script src="scripts/index.js" type="module"></script>
+  <script src="scripts/join.js" defer></script>
 
-  <title>Oka Secondary School | Home | wdd231</title>
+  <title>Oka Secondary School | Join | wdd231</title>
 
 </head>
 <body>
@@ -35,10 +35,10 @@
     </a>
 
     <nav aria-label="Main Navigation">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="admission.html">Admission</a>
       <a href="forum.html">Alumni Forum</a>
-      <a href="join.html">Join</a>
+      <a href="join.html" class="active">Join</a>
     </nav>
 
     <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -46,76 +46,64 @@
     </button>
   </header>
 
-  <main>
-    <section class="hero">
-      <img
-       srcset="images/index/hero-400.webp 400w,
-              images/index/hero-600.webp 600w,
-              images/index/hero-1024.webp 1024w"
-       sizes="(max-width: 640px) 100vw,
-              (max-width: 1023px) 100vw,
-              1024px"
-       src="images/index/hero-600.webp" alt="hero image of oka secondary school" class="hero-image">
-      <div class="hero-content">
-        <h1>Welcome to Oka Secondary School</h1>
-        <p>Empowering students to achieve their full potential and become responsible global citizens.</p>
-        <a href="history.html" class="cta">Learn More</a>
-      </div>
-    </section>
-    <section class="about-preview">
-      <h2>About Our School</h2>
-      <p>
-        Located in Benin City, Nigeria, Oka Secondary School is committed to nurturing
-        responsible leaders and lifelong learners through quality education and character development.
-      </p>
-      <a href="history.html">Learn More</a>
-    </section>
-    <section class="club-event">
-      <div class="event-con">
-        <h2>Upcoming Events</h2>
-        <div class="event">
-        <!-- dynamically generated -->
-         </div>
-      </div>
+  <main class="join-form">
+    <form method="get" action="thankyou.html">
+      <h1> Join </h1>
+      <h3>Be a part of the Students and Alumni Forum</3>
+      <label>
+        First Name
+        <input type="text" name="fname" title="First Name" required autocomplete="given-name">
+      </label>
 
-      <div class="news-con">
-        <h2>Latest News</h2>
-        <div class="news">
-        <!-- dynamically generated -->
-         </div>
-      </div>
+      <label>
+        Last Name
+        <input type="text" name="lname" title="Last Name" required autocomplete="family-name">
+      </label>
 
-      <div class="clubs">
-        <h2>Clubs</h2>
-        <div class="carousel">
-          <button class="nav left">&#10094;</button>
+      <label>
+        Current role
+        <input type="text"
+            name="orgtitle"
+            title="Your role in the organization"
+            autocomplete="organization-title"
+            pattern="[A-Za-z\- ]{7,}">
+      </label>
 
-          <div class="carousel-track">
-            <div class="slide">
-              <img src="images/index/jetsclub.webp" alt="jetsclub" width="200">
-              <h3>
-                JETS Club
-              </h3>
-            </div>
-            <div class="slide">
-              <img src="images/index/lddqsclub.webp" alt="lddqsclub" width="200">
-              <h3>
-                LDDQS Club
-            </div>
-            <div class="slide">
-              <img src="images/index/mathsclub.webp" alt="mathsclub" width="200">
-              <h3>
-                MATHS Club
-              </h3>
-            </div>
-          </div>
+      <label>
+          Email Address
+          <input type="email"
+              name="email"
+              title="Email Address"
+              required
+              autocomplete="email"
+              placeholder="example@company.org">
+      </label>
 
-          <button class="nav right">&#10095;</button>
-        </div>
-      </div>
-    </section>
-    <section class="spotlight">
-    </section>
+      <label>
+          Mobile Phone
+          <input type="tel"
+              name="phone"
+              title="Mobile Phone Number"
+              required
+              autocomplete="tel">
+      </label>
+
+      <label>
+          class year
+          <input type="text"
+              name="class"
+              title="Class year"
+              required
+              autocomplete="class"
+              placeholder="class of 2013"
+              >
+      </label>
+
+      <!-- Timestamp -->
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Submit Application">
+    </form>
 
   </main>
 

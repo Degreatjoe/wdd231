@@ -1,0 +1,45 @@
+/* medium.css */
+@media (min-width: 641px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem ;
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav a:hover {
+        border-bottom: 4px solid var(--secondary-color);
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+   }
+
+   .cta:hover {
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+    
+        /* GRID VIEW */
+    .members {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .member-card {
+        margin: 8px;
+        
+    }
+
+}

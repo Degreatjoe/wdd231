@@ -22,9 +22,9 @@
   <link rel="icon" href="favicon.ico">
 
   <script src="scripts/util.js" defer></script>
-  <script src="scripts/index.js" type="module"></script>
+  <script type="module" src="scripts/forum.js"></script>
 
-  <title>Oka Secondary School | Home | wdd231</title>
+  <title>Oka Secondary School | Forum | wdd231</title>
 
 </head>
 <body>
@@ -35,9 +35,9 @@
     </a>
 
     <nav aria-label="Main Navigation">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html">Home</a>
       <a href="admission.html">Admission</a>
-      <a href="forum.html">Alumni Forum</a>
+      <a href="forum.html" class="active">Alumni Forum</a>
       <a href="join.html">Join</a>
     </nav>
 
@@ -46,76 +46,25 @@
     </button>
   </header>
 
-  <main>
-    <section class="hero">
-      <img
-       srcset="images/index/hero-400.webp 400w,
-              images/index/hero-600.webp 600w,
-              images/index/hero-1024.webp 1024w"
-       sizes="(max-width: 640px) 100vw,
-              (max-width: 1023px) 100vw,
-              1024px"
-       src="images/index/hero-600.webp" alt="hero image of oka secondary school" class="hero-image">
-      <div class="hero-content">
-        <h1>Welcome to Oka Secondary School</h1>
-        <p>Empowering students to achieve their full potential and become responsible global citizens.</p>
-        <a href="history.html" class="cta">Learn More</a>
+  <main class="forum-main">
+    <div>
+      <h1>Alumni Forum</h1>
+      <div class="toggle">
+        <button id="membersBtn" class="current">members</button>
+        <button id="conversationsBtn">conversations</button>
       </div>
-    </section>
-    <section class="about-preview">
-      <h2>About Our School</h2>
-      <p>
-        Located in Benin City, Nigeria, Oka Secondary School is committed to nurturing
-        responsible leaders and lifelong learners through quality education and character development.
-      </p>
-      <a href="history.html">Learn More</a>
-    </section>
-    <section class="club-event">
-      <div class="event-con">
-        <h2>Upcoming Events</h2>
-        <div class="event">
-        <!-- dynamically generated -->
-         </div>
+    </div>
+    <div class="members"></div>
+    <div class="conversations"></div>
+
+    <dialog class="unauthorized">
+      <h3>Unauthorized Access</h3>
+      <p>you have to be a member of the forum to access conversations</p>
+      <div class="actions">
+        <a href="join.html">Join</a>
+        <button id="return">Ok</button>
       </div>
-
-      <div class="news-con">
-        <h2>Latest News</h2>
-        <div class="news">
-        <!-- dynamically generated -->
-         </div>
-      </div>
-
-      <div class="clubs">
-        <h2>Clubs</h2>
-        <div class="carousel">
-          <button class="nav left">&#10094;</button>
-
-          <div class="carousel-track">
-            <div class="slide">
-              <img src="images/index/jetsclub.webp" alt="jetsclub" width="200">
-              <h3>
-                JETS Club
-              </h3>
-            </div>
-            <div class="slide">
-              <img src="images/index/lddqsclub.webp" alt="lddqsclub" width="200">
-              <h3>
-                LDDQS Club
-            </div>
-            <div class="slide">
-              <img src="images/index/mathsclub.webp" alt="mathsclub" width="200">
-              <h3>
-                MATHS Club
-              </h3>
-            </div>
-          </div>
-
-          <button class="nav right">&#10095;</button>
-        </div>
-      </div>
-    </section>
-    <section class="spotlight">
-    </section>
+    </dialog>
 
   </main>
 
